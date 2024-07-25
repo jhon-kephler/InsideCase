@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InsideCase.Application\InsideCase.Application.csproj" />
+    <ProjectReference Include="..\InsideCase.Core\InsideCase.Core.csproj" />
+    <ProjectReference Include="..\InsideCase.Data\InsideCase.Data.csproj" />
+  </ItemGroup>
+
+</Project>

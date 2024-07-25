@@ -1,0 +1,6 @@
+@InsideCase_HostAddress = http://localhost:5114
+
+GET {{InsideCase_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
