@@ -21,10 +21,12 @@ In the console entry under InsideCase\InsideCaseDB and use the command
 
 ```bash
   docker-compose up -d
-
+```
+```bash
   docker container ls
-
-  docker inspect "CONTAINER ID" for image postgres
+```
+```bash
+  docker inspect "CONTAINER ID" image postgres
 ```
 
 Open [Localhost](http://localhost:8080/) 
@@ -59,6 +61,15 @@ Open project InsideCase.sln and run project
   ```bash
     Post - /api/product/Product/Create
   ```
+
+  Request
+    ```bash
+      {
+        "name_Product": "string",
+        "price": 0,
+        "stock": 0
+      }
+    ```
   
 - Get product by Id
   ```bash
@@ -86,16 +97,19 @@ Open project InsideCase.sln and run project
 - Close order
   ```bash
     Post - /api/order/Order/Close
-    Request
-            {
-              "order_Id": 0,
-              "produtos": [
-                {
-                  "id": 0,
-                  "quantidade": 0
-                }
-              ]
-            }
+  ```
+
+  Request
+  ```bash
+    {
+      "order_Id": 0,
+      "produtos": [
+        {
+          "id": 0,
+          "quantidade": 0
+        }
+      ]
+    }
   ```
 
 - Get order by Id
